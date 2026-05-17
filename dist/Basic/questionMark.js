@@ -1,0 +1,30 @@
+"use strict";
+//?: ternary operator: decision making
+//??: nullish coalescing operator (Works upon null/undefined)
+//? : optional chaining
+Object.defineProperty(exports, "__esModule", { value: true });
+const eligible = (age) => {
+    // if(age>=21){
+    //     console.log('Eligible for marriage')
+    // }else{
+    //     console.log('You are not eligible')
+    // }
+    const result = age >= 21 ? console.log('Eligible for marriage') : console.log('You are not eligible');
+};
+eligible(20);
+const userTheme = undefined;
+const selectedTheme = userTheme ?? 'Light theme';
+const userTheme1 = 'DarkTheme';
+const selectedTheme1 = userTheme1 ?? 'Light theme';
+console.log(selectedTheme);
+console.log(selectedTheme1);
+//Optional chaining
+const user = {
+    address: {
+        city: 'Dhaka',
+        town: 'Banani'
+    }
+};
+const postalCode = user?.address?.postalCode;
+console.log(postalCode);
+//# sourceMappingURL=questionMark.js.map
